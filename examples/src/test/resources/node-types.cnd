@@ -1,0 +1,12 @@
+<ns = 'http://namespace.com/ns'>
+<app = 'http://kartashov.com/jackrabbit-cookbook'>
+
+[app:city] > nt:base, mix:referenceable
+    - app:name (string) = "" mandatory autocreated
+    - app:population (long) = "0" mandatory autocreated
+
+[app:country] > nt:base
+    orderable
+    - app:name (string) = "" mandatory autocreated
+    - app:capital (reference)
+    + * (app:city) = app:city

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<nodeTypes
+        xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+        xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+        xmlns:app="http://kartashov.com/jackrabbit-cookbook">
+    <nodeType name="app:country" isMixin="false" hasOrderableChildNodes="true" primaryItemName="">
+        <supertypes>
+            <supertype>nt:base</supertype>
+        </supertypes>
+        <propertyDefinition name="app:name" requiredType="String" autoCreated="true" mandatory="true"
+                            onParentVersion="COPY" multiple="false" protected="false">
+            <defaultValues>
+                <defaultValue><![CDATA[]]></defaultValue>
+            </defaultValues>
+        </propertyDefinition>
+        <propertyDefinition name="app:capital" requiredType="WeakReference" autoCreated="false" mandatory="false"
+                            onParentVersion="COPY" multiple="false" protected="false"/>
+        <childNodeDefinition name="*" defaultPrimaryType="app:city" autoCreated="false" mandatory="false"
+                             onParentVersion="VERSION" protected="false" sameNameSiblings="true">
+            <requiredPrimaryTypes>
+                <requiredPrimaryType>app:city</requiredPrimaryType>
+            </requiredPrimaryTypes>
+        </childNodeDefinition>
+    </nodeType>
+    <nodeType name="app:city" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+        <supertypes>
+            <supertype>nt:base</supertype>
+            <supertype>mix:referenceable</supertype>
+        </supertypes>
+        <propertyDefinition name="app:name" requiredType="String" autoCreated="true" mandatory="true"
+                            onParentVersion="COPY" multiple="false" protected="false">
+            <defaultValues>
+                <defaultValue><![CDATA[]]></defaultValue>
+            </defaultValues>
+        </propertyDefinition>
+        <propertyDefinition name="app:population" requiredType="Long" autoCreated="true" mandatory="true"
+                            onParentVersion="COPY" multiple="false" protected="false">
+            <defaultValues>
+                <defaultValue>0</defaultValue>
+            </defaultValues>
+        </propertyDefinition>
+        <childNodeDefinitions/>
+    </nodeType>
+</nodeTypes>
