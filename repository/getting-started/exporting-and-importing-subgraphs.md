@@ -15,7 +15,7 @@ out.close();
 
 session.removeItem("/message");
 session.save();
-assert !session.nodeExists("/node-01-06");
+assert !session.nodeExists("/message");
 
 BufferedInputStream in = new BufferedInputStream(new FileInputStream(file));
 session.getWorkspace().importXML("/", in, 
