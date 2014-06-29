@@ -1,0 +1,4 @@
+jackrabbit-cookbook
+===================
+
+Jackrabbit Cookbook
