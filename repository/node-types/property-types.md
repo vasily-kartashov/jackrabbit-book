@@ -17,6 +17,7 @@ Every property must have one of the following types:
 - ```WEAKREFERENCE``` - ```java.lang.String???``` object storing the ID of the referenced node(s). You can still move
   and delete referenced node.
 - ```REFERENCE``` - the same as ```WEAKREFERENCE``` except the ```REFERENCE``` always have to point to an existing node.
+- ```UNDEFINED``` - the property can be of any type (Jackrabbit specific???)
 
 ```java
 // @todo write code that shows how to work with properties
