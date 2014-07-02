@@ -38,6 +38,8 @@
     * [Using JcrUtils](reading/using-jcrutils.md)
     * [Reading property attributes](reading/reading-property-attributes.md)
 * [Writing and versioning](writing-and-versioning/README.md)
+    * [Understanding sessions](writing-and-versioning/understanding-sessions.md)
+    * [Session and workspace writes](writing-and-versioning/session-and-workspace-writes.md)
 * [Querying](querying/README.md)
 * [Object content mapping](object-content-mapping/README.md)
 

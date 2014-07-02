@@ -1,17 +1,17 @@
 CACHE MANIFEST
-# Revision 1404326899685
+# Revision 1404335425607
 
 CACHE:
 index.html
-configuration/file-system.html
-configuration/structure-of-repository-xml.html
+configuration/README.html
 configuration/data-store.html
 configuration/security.html
-configuration/README.html
-configuration/pure-in-memory-repository.html
 configuration/versioning.html
+configuration/file-system.html
 configuration/workspace.html
+configuration/pure-in-memory-repository.html
 getting-started/exporting-and-importing-subgraphs.html
+configuration/structure-of-repository-xml.html
 getting-started/README.html
 getting-started/browsing-repository-through-webdav.html
 getting-started/creating-nodes-and-properties.html
@@ -19,30 +19,32 @@ getting-started/deleting-nodes-and-properties.html
 getting-started/access-control-management.html
 getting-started/locking.html
 getting-started/minimal-pom.html
-getting-started/observation.html
 getting-started/working-with-node-versions.html
 getting-started/working-with-shareable-nodes.html
 node-types/mixins.html
-node-types/declaring-node-types-with-cnd.html
 node-types/README.html
+node-types/declaring-node-types-with-cnd.html
 node-types/declaring-node-types-with-xml.html
-node-types/inheritance.html
 node-types/declaring-node-types-programmatically.html
+node-types/inheritance.html
 node-types/property-types.html
-node-types/standard-node-types.html
 node-types/using-binary-data.html
 node-types/using-multivalued-properties.html
-object-content-mapping/README.html
+node-types/standard-node-types.html
 node-types/using-references.html
+object-content-mapping/README.html
 querying/README.html
 reading/README.html
 reading/directly-access-nodes-and-properties.html
-reading/navigating-the-tree.html
 reading/reading-property-attributes.html
+getting-started/observation.html
+reading/navigating-the-tree.html
 reading/traversing-nodes-and-properties.html
-reading/using-jcrutils.html
 reading/using-visitor-pattern.html
+reading/using-jcrutils.html
 writing-and-versioning/README.html
+writing-and-versioning/session-and-workspace-writes.html
+writing-and-versioning/understanding-sessions.html
 gitbook\app.js
 gitbook\fonts\fontawesome\FontAwesome.otf
 gitbook\fonts\fontawesome\fontawesome-webfont.eot
