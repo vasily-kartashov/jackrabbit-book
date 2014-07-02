@@ -22,3 +22,5 @@ Every property must have one of the following types:
 ```java
 // @todo write code that shows how to work with properties
 ```
+
+http://stackoverflow.com/questions/3812884/custom-jcr-jackrabbit-node-property-type/3813475#3813475
