@@ -44,6 +44,11 @@
     * [Transactions](writing-and-versioning/transactions.md)
     * [Referential integrity](writing-and-versioning/referential-integrity.md)
 * [Querying](querying/README.md)
+    * [Joins](querying/joins.md)
+    * [Property constraints](querying/property-constraints.md)
+    * [Node constraints](querying/node-constraints.md)
+    * [Full-text search](querying/full-text-search.md)
+    * [Ordering, limits and offsets](querying/ordering-limits-and-offsets.md)
 * [Object content mapping](object-content-mapping/README.md)
 
 
