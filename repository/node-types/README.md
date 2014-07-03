@@ -14,3 +14,6 @@ create a new node and cannot be changed(???) after that. Mixin types can be adde
 
 The node type definitions are stored in a central system wide registry. We start with how you can define node types in 
 your registry.
+
+CRX Documentation
+http://docs.adobe.com/docs/en/crx/current/developing/data_modeling.html
