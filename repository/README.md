@@ -20,4 +20,27 @@ https://docs.jboss.org/author/display/MODE/Introduction+to+JCR
 Features list must dictate the table of content
 http://en.wikipedia.org/wiki/Apache_Jackrabbit
 
+Nice introduction
+http://www.artima.com/lejava/articles/contentrepository.html
+
+Author's interview
+http://www.infoq.com/articles/nuescheler-jcr-rest
+
+Full Text search tutorial
+https://github.com/brix-cms/brix-cms/wiki/FullTextSearchTutorial
+
+Distributed transactions
+http://th1rty7.blogspot.co.uk/2009/03/spring-distributed-transactions-across.html (Very cool)
+
+Some documentation
+https://code.google.com/p/jackrabbit-jcr-demo/w/list
+
+Adobe forums
+https://forums.adobe.com/community/adep/capabilities/content-repository
+https://forums.adobe.com/search.jspa?q=jcr
+
+A lot can be taken from this documentation
+http://docs.jboss.org/jbossdna/0.7/manuals/reference/html/jcr-query-and-search.html
+
+
 
