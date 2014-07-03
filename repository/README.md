@@ -45,3 +45,5 @@ http://docs.jboss.org/jbossdna/0.7/manuals/reference/html/jcr-query-and-search.h
 CRX Documentation
 http://docs.adobe.com/docs/en/crx/current/pars/crx-2-3-overview.html#Developing%20on%20CRX
 
+Take a look at the tests from jackrabbit project
+https://github.com/apache/jackrabbit/tree/trunk/jackrabbit-core/src/test
