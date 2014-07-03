@@ -16,3 +16,8 @@ http://stackoverflow.com/questions/8764524/transactions-in-apache-jackrabbit-and
 
 ModeShape
 https://docs.jboss.org/author/display/MODE/Introduction+to+JCR
+
+Features list must dictate the table of content
+http://en.wikipedia.org/wiki/Apache_Jackrabbit
+
+
