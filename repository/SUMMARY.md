@@ -19,6 +19,7 @@
     * [Cluster](configuration/cluster.md)
     * [Data store](configuration/data-store.md)
     * [Pure in-memory repository](configuration/pure-in-memory-repository.md)
+    * [Clustering](configuration/clustering.md)
 * [Node types](node-types/README.md)
     * [Declaring node types with CND](node-types/declaring-node-types-with-cnd.md)
     * [Declaring node types with XML](node-types/declaring-node-types-with-xml.md)
@@ -40,6 +41,8 @@
 * [Writing and versioning](writing-and-versioning/README.md)
     * [Understanding sessions](writing-and-versioning/understanding-sessions.md)
     * [Session and workspace writes](writing-and-versioning/session-and-workspace-writes.md)
+    * [Transactions](writing-and-versioning/transactions.md)
+    * [Referential integrity](writing-and-versioning/referential-integrity.md)
 * [Querying](querying/README.md)
 * [Object content mapping](object-content-mapping/README.md)
 
