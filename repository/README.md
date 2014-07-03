@@ -42,5 +42,6 @@ https://forums.adobe.com/search.jspa?q=jcr
 A lot can be taken from this documentation
 http://docs.jboss.org/jbossdna/0.7/manuals/reference/html/jcr-query-and-search.html
 
-
+CRX Documentation
+http://docs.adobe.com/docs/en/crx/current/pars/crx-2-3-overview.html#Developing%20on%20CRX
 
