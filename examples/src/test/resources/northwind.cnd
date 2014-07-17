@@ -1,0 +1,29 @@
+<ns = 'http://namespace.com/ns'>
+<nw = 'http://kartashov.com/jackrabbit-cookbook/northwind'>
+
+[nw:region] > nt:base
+    - nw:description (string) = "" mandatory autocreated
+    + * (nw:territory) = nw:territory
+
+[nw:territory] > nt:base, mix:referenceable
+    - nw:description (string) = "" mandatory autocreated
+
+[nw:employee] > nt:base, mix:referenceable
+    - nw:firstName (string) = "" mandatory autocreated
+    - nw:lastName (string) = "" mandatory autocreated
+    - nw:title (string) = "" mandatory autocreated
+    - nw:titleOfCourtesy (string) = "" mandatory autocreated
+    - nw:birthDate (date) = "" mandatory autocreated
+    - nw:hireDate (date) = "" mandatory autocreated
+    - nw:address (string) = "" mandatory autocreated
+    - nw:city (string) = "" mandatory autocreated
+    - nw:region (string) = "" mandatory autocreated
+    - nw:postalCode (string) = "" mandatory autocreated
+    - nw:homePhone (string) = "" mandatory autocreated
+    - nw:extension (string) = "" mandatory autocreated
+    - nw:photo (binary) = "" mandatory autocreated
+    - nw:notes (string) = "" mandatory autocreated
+    - nw:reportsTo (reference) = "" mandatory autocreated multivalue
+    - nw:photoPath (string) = "" mandatory autocreated
+
+[nw:product] > nt:base, mix:referenceable
