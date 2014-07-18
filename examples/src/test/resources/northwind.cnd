@@ -7,10 +7,10 @@
 [nw:territories] > nt:base
     + * (nw:region)
 [nw:region] > nt:base
-    - nw:regionDescription (string) mandatory
+    - regionDescription (string) mandatory
     + * (nw:territory) = nw:territory
 [nw:territory] > nt:base, mix:referenceable
-    - nw:territoryDescription (string) mandatory
+    - territoryDescription (string) mandatory
 
 // ---------------------------------------------------------------------------------------------------------------------
 // employees
@@ -18,23 +18,23 @@
 [nw:employees] > nt:base
     + * (nw:employee)
 [nw:employee] > nt:base, mix:referenceable
-    - nw:firstName (string) mandatory
-    - nw:lastName (string) mandatory
-    - nw:title (string)
-    - nw:titleOfCourtesy (string)
-    - nw:birthDate (date)
-    - nw:hireDate (date)
-    - nw:address (string)
-    - nw:city (string)
-    - nw:region (string)
-    - nw:postalCode (string)
-    - nw:homePhone (string)
-    - nw:extension (string)
-    - nw:photo (binary)
-    - nw:notes (string)
-    - nw:reportsTo (reference)
-    - nw:photoPath (string)
-    - nw:territories (reference) multiple
+    - firstName (string) mandatory
+    - lastName (string) mandatory
+    - title (string)
+    - titleOfCourtesy (string)
+    - birthDate (date)
+    - hireDate (date)
+    - address (string)
+    - city (string)
+    - region (string)
+    - postalCode (string)
+    - homePhone (string)
+    - extension (string)
+    - photo (binary)
+    - notes (string)
+    - reportsTo (reference)
+    - photoPath (string)
+    - territories (reference) multiple
 
 // ---------------------------------------------------------------------------------------------------------------------
 // products
@@ -42,35 +42,35 @@
 [nw:products] > nt:base
     + * (nw:category, nw:supplier, nw:shipper)
 [nw:category] > nt:base, mix:referenceable
-    - nw:categoryName (string) mandatory
-    - nw:description (string)
-    - nw:picture (binary)
+    - categoryName (string) mandatory
+    - description (string)
+    - picture (binary)
 [nw:supplier] > nt:base
-    - nw:companyName (string) mandatory
-    - nw:contactName (string)
-    - nw:contactTitle (string)
-    - nw:address (string)
-    - nw:city (string)
-    - nw:region (string)
-    - nw:postalCode (string)
-    - nw:country (string)
-    - nw:phone (string)
-    - nw:fax (string)
-    - nw:homePage (string)
+    - companyName (string) mandatory
+    - contactName (string)
+    - contactTitle (string)
+    - address (string)
+    - city (string)
+    - region (string)
+    - postalCode (string)
+    - country (string)
+    - phone (string)
+    - fax (string)
+    - homePage (string)
     + * (nw:product)
 [nw:product] > nt:base, mix:referenceable
-    - nw:productName (string) mandatory
-    - nw:supplier (reference)
-    - nw:category (reference)
-    - nw:quantityPerUnit (string)
-    - nw:unitPrice (double)
-    - nw:unitsInStock (long)
-    - nw:unityInOrder (long)
-    - nw:recorderLevel (long)
-    - nw:discontinued (boolean)
+    - productName (string) mandatory
+    - supplier (reference)
+    - category (reference)
+    - quantityPerUnit (string)
+    - unitPrice (double)
+    - unitsInStock (long)
+    - unityInOrder (long)
+    - recorderLevel (long)
+    - discontinued (boolean)
 [nw:shipper] > nt:base, mix:referenceable
-    - nw:companyName (string)
-    - nw:phone (string)
+    - companyName (string)
+    - phone (string)
 
 // ---------------------------------------------------------------------------------------------------------------------
 // customers
@@ -78,19 +78,19 @@
 [nw:customers] > nt:base
     + * (nw:customer, nw:demographics)
 [nw:customer] > nt:base, mix:referenceable
-    - nw:companyName (string) = "" mandatory autocreated
-    - nw:contactName (string)
-    - nw:contactTitle (string)
-    - nw:address (string)
-    - nw:city (string)
-    - nw:region (string)
-    - nw:postalCode (string)
-    - nw:country (string)
-    - nw:phone (string)
-    - nw:fax (string)
-    - nw:demographics (reference) multiple
+    - companyName (string) = "" mandatory autocreated
+    - contactName (string)
+    - contactTitle (string)
+    - address (string)
+    - city (string)
+    - region (string)
+    - postalCode (string)
+    - country (string)
+    - phone (string)
+    - fax (string)
+    - demographics (reference) multiple
 [nw:demographics] > nt:base, mix:referenceable
-    - nw:description (string)
+    - description (string)
 
 // ---------------------------------------------------------------------------------------------------------------------
 // orders
@@ -98,22 +98,22 @@
 [nw:orders] > nt:base
     + * (nw:order)
 [nw:order] > nt:base
-    - nw:customer (reference)
-    - nw:employee (reference)
-    - nw:orderDate (date)
-    - nw:requiredDate (date)
-    - nw:shippedDate (date)
-    - nw:shipVia (reference)
-    - nw:freight (double)
-    - nw:shipName (string)
-    - nw:shipAddress (string)
-    - nw:shipCity (string)
-    - nw:shipRegion (string)
-    - nw:shipPostalCode (string)
-    - nw:shipCountry (string)
+    - customer (reference)
+    - employee (reference)
+    - orderDate (date)
+    - requiredDate (date)
+    - shippedDate (date)
+    - shipVia (reference)
+    - freight (double)
+    - shipName (string)
+    - shipAddress (string)
+    - shipCity (string)
+    - shipRegion (string)
+    - shipPostalCode (string)
+    - shipCountry (string)
     + * (nw:orderDetail)
 [nw:orderDetail] > nt:base
-    - nw:product (reference) mandatory
-    - nw:unitPrice (double) mandatory
-    - nw:quantity (long) mandatory
-    - nw:discount (double) mandatory
+    - product (reference) mandatory
+    - unitPrice (double) mandatory
+    - quantity (long) mandatory
+    - discount (double) mandatory
