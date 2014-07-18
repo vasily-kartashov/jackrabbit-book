@@ -13,6 +13,7 @@
         <version.jackrabbit>[2.8.0, 3.0.0)</version.jackrabbit>
         <version.jackrabbit-ocm>[2.0.0, 3.0.0)</version.jackrabbit-ocm>
         <version.junit>[4.10, 5.0)</version.junit>
+        <version.jackcess>2.0.4</version.jackcess>
     </properties>
 
     <build>
@@ -52,6 +53,13 @@
             <version>${version.junit}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.healthmarketscience.jackcess</groupId>
+            <artifactId>jackcess</artifactId>
+            <version>${version.jackcess}</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
 </project>
