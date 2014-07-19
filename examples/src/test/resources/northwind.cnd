@@ -28,6 +28,7 @@
     - city (string)
     - region (string)
     - postalCode (string)
+    - country (string)
     - homePhone (string)
     - extension (string)
     - photo (binary)
@@ -40,7 +41,15 @@
 // products
 
 [nw:products] > nt:base
-    + * (nw:category, nw:supplier, nw:shipper)
+    + shippers (nw:shippers)
+    + categories (nw:categories)
+    + suppliers (nw:suppliers)
+[nw:categories] > nt:base
+    + * (nw:category)
+[nw:suppliers] > nt:base
+    + * (nw:supplier)
+[nw:shippers] > nt:base
+    + * (nw:shipper)
 [nw:category] > nt:base, mix:referenceable
     - categoryName (string) mandatory
     - description (string)
@@ -66,7 +75,7 @@
     - unitPrice (double)
     - unitsInStock (long)
     - unityInOrder (long)
-    - recorderLevel (long)
+    - reorderLevel (long)
     - discontinued (boolean)
 [nw:shipper] > nt:base, mix:referenceable
     - companyName (string)
@@ -76,9 +85,9 @@
 // customers
 
 [nw:customers] > nt:base
-    + * (nw:customer, nw:demographics)
+    + * (nw:customer)
 [nw:customer] > nt:base, mix:referenceable
-    - companyName (string) = "" mandatory autocreated
+    - companyName (string) mandatory
     - contactName (string)
     - contactTitle (string)
     - address (string)
@@ -88,9 +97,6 @@
     - country (string)
     - phone (string)
     - fax (string)
-    - demographics (reference) multiple
-[nw:demographics] > nt:base, mix:referenceable
-    - description (string)
 
 // ---------------------------------------------------------------------------------------------------------------------
 // orders
@@ -111,8 +117,8 @@
     - shipRegion (string)
     - shipPostalCode (string)
     - shipCountry (string)
-    + * (nw:orderDetail)
-[nw:orderDetail] > nt:base
+    + * (nw:detail)
+[nw:detail] > nt:base
     - product (reference) mandatory
     - unitPrice (double) mandatory
     - quantity (long) mandatory
