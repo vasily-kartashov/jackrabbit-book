@@ -44,6 +44,7 @@
     * [Transactions](writing-and-versioning/transactions.md)
     * [Referential integrity](writing-and-versioning/referential-integrity.md)
 * [Querying](querying/README.md)
+    * [Fetching nodes](querying/fetching-nodes.md)
     * [Joins](querying/joins.md)
     * [Property constraints](querying/property-constraints.md)
     * [Node constraints](querying/node-constraints.md)
