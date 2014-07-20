@@ -40,3 +40,14 @@ for (Row row : JcrUtils.getRows(result)) {
     System.out.println(territoryDescription + ": " + firstName + " " + lastName);
 }
 ```
+
+Todo
+- Fetch nodes without classes
+- Group & math like size of an order
+- Group by like group all customers by country
+- All types of join available (for joins section !)
+- Using versioning in the selection
+- How does locking affect querying
+- Full text fetch (for full test search section!)
+- Conditions on attributes (multi-value, references, sub-queries, ranges, all for conditions section!)
+- 

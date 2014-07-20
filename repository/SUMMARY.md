@@ -49,7 +49,6 @@
     * [Property constraints](querying/property-constraints.md)
     * [Node constraints](querying/node-constraints.md)
     * [Full-text search](querying/full-text-search.md)
-    * [Ordering, limits and offsets](querying/ordering-limits-and-offsets.md)
 * [Object content mapping](object-content-mapping/README.md)
 
 

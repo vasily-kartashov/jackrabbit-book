@@ -1,6 +1,9 @@
 Querying
 =====================================
 
+SQL2 Diagram:
+http://www.h2database.com/jcr/grammar.html not sure how correct
+
 JBoss Documentation:
 http://docs.jboss.org/jbossdna/0.7/manuals/reference/html/jcr-query-and-search.html
 
