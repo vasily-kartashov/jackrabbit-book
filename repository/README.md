@@ -47,3 +47,9 @@ http://docs.adobe.com/docs/en/crx/current/pars/crx-2-3-overview.html#Developing%
 
 Take a look at the tests from jackrabbit project
 https://github.com/apache/jackrabbit/tree/trunk/jackrabbit-core/src/test
+
+For advanced chapter:
+How to write your own persistence manager?
+http://svn.apache.org/repos/asf/jackrabbit/sandbox/jackrabbit-mongo-persistence/src/main/java/org/apache/jackrabbit/core/persistence/mongo/
+And implement one for DynamoDB?
+
