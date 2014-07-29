@@ -60,9 +60,7 @@ public class DeclaringNodeTypesProgrammaticallyTest extends AbstractTest {
         NodeDefinitionTemplate child = nodeTypeManager.createNodeDefinitionTemplate();
         child.setName("*");
         child.setDefaultPrimaryTypeName("app:city");
-        child.setRequiredPrimaryTypeNames(new String[]{
-                "app:city"
-        });
+        child.setRequiredPrimaryTypeNames(new String[]{"app:city"});
 
         country.getNodeDefinitionTemplates().add(child);
 
