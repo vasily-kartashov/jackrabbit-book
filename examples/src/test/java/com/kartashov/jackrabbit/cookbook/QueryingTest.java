@@ -5,7 +5,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import javax.jcr.Node;
-import javax.jcr.NodeIterator;
 import javax.jcr.query.Query;
 import javax.jcr.query.QueryManager;
 import javax.jcr.query.QueryResult;
@@ -58,4 +57,24 @@ public class QueryingTest extends AbstractTest {
         }
     }
 
+    @Test
+    public void testFetchNodesWithoutProperty() throws Exception {
+        String expression = "SELECT * FROM [nw:employee] WHERE [region] IS NULL";
+        QueryManager queryManager = session.getWorkspace().getQueryManager();
+        Query query = queryManager.createQuery(expression, Query.JCR_SQL2);
+
+        QueryResult result = query.execute();
+        for (Row row : JcrUtils.getRows(result)) {
+            Node employee = row.getNode("nw:employee");
+            String firstName = employee.getProperty("firstName").getString();
+            String lastName = employee.getProperty("lastName").getString();
+            System.out.println("Employee without region: " + firstName + " " + lastName);
+        }
+    }
+
+    @Test
+    public void testCriteriaOnMultivaluedProperties() throws Exception {
+
+    }
 }
+
