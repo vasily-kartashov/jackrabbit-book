@@ -1,4 +1,4 @@
-Jackrabbit Cookbook
+Jackrabbit Book
 ================================
 
 Book is located under ...
