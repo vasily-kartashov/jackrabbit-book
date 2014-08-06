@@ -13,6 +13,6 @@ This chapter is based on the Northwind database provided with Microsoft SQL Serv
 
 The data schema looks like follows: http://northwinddatabase.codeplex.com/
 
-
+Cheat sheet https://wiki.magnolia-cms.com/display/WIKI/JCR+Query+Cheat+Sheet
 
 
